@@ -3,15 +3,15 @@ import { ItemsList } from './ItemsList';
 
 // import and prepend the api url to any fetch calls
 import apiURL from '../api';
-import AddItems from './AddItem';
+import AddItem from './AddItem';
 import UpdateItem from './UpdateItem';
 import SingleItem from './SingleItem';
 
 export const App = () => {
-
+	
 	const [items, setItems] = useState([]);
 	const [item, setItem] = useState({});
-	const [view, setView] = useState(1);
+	const [view, setView] = useState('viewItem');
 
 	async function fetchItems(){
 		try {
@@ -30,13 +30,13 @@ export const App = () => {
 
 	return (
 		<main>	
-			{view == 1? 
+			{view == 'viewItem'? 
 			<div className='items'>
 				<ItemsList items={items} />
-				<SingleItem item={item}/>
-			</div> : view == 2?
-			 <AddItems/>:
-			 <UpdateItem/>}
+				<SingleItem item={item} setView={setView}/>
+			</div> : view == 'addItem'?
+			 <AddItem/>:
+			 <UpdateItem setView={setView}/>}
 		</main>
 	)
 }
