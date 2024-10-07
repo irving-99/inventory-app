@@ -1,0 +1,229 @@
+<mxfile host="65bd71144e">
+    <diagram id="Bw6o0LyGh3bSBO_NjMBy" name="Page-1">
+        <mxGraphModel dx="3113" dy="2208" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#000000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="11" value="wireframe" style="swimlane;startSize=20;horizontal=1;containerType=tree;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Times New Roman;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;" vertex="1" parent="1">
+                    <mxGeometry x="-390" y="-640" width="1695" height="1130" as="geometry"/>
+                </mxCell>
+                <UserObject label="" treeRoot="1" id="14">
+                    <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Times New Roman;" vertex="1" parent="11">
+                        <mxGeometry x="470" y="50" width="725" height="465" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="16" value="Division" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Times New Roman;" vertex="1" parent="11">
+                    <mxGeometry x="890" y="610" width="720" height="460" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;fontFamily=Times New Roman;" edge="1" parent="11" source="14" target="16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Division" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Times New Roman;" vertex="1" parent="11">
+                    <mxGeometry x="70" y="610" width="720" height="460" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;fontFamily=Times New Roman;" edge="1" parent="11" source="14" target="15">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Add Item Button" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#4D4D4D;" vertex="1" parent="11">
+                    <mxGeometry x="1065" y="70" width="90" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#4D4D4D;" vertex="1" parent="11">
+                    <mxGeometry x="490" y="170" width="670" height="290" as="geometry"/>
+                </mxCell>
+                <UserObject label="Main Application View" treeRoot="1" id="32">
+                    <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Times New Roman;" vertex="1" parent="11">
+                        <mxGeometry x="160" y="230" width="210" height="50" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="33" value="" style="shape=flexArrow;endArrow=classic;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#FFFFFF;" edge="1" parent="11">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="380" y="258" as="sourcePoint"/>
+                        <mxPoint x="440" y="258" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="390" y="258"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#4D4D4D;" vertex="1" parent="11">
+                    <mxGeometry x="95" y="720" width="670" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="Back Button" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#4D4D4D;" vertex="1" parent="11">
+                    <mxGeometry x="95" y="1020" width="90" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="" style="group" vertex="1" connectable="0" parent="11">
+                    <mxGeometry x="95" y="630" width="205" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Inventory Application" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#4D4D4D;" vertex="1" parent="40">
+                    <mxGeometry width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="Search Bar" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#4D4D4D;" vertex="1" parent="40">
+                    <mxGeometry y="40" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="Add Item Button" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#4D4D4D;" vertex="1" parent="40">
+                    <mxGeometry x="115" y="40" width="90" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="group" vertex="1" connectable="0" parent="11">
+                    <mxGeometry x="910" y="620" width="205" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="Inventory Application" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#4D4D4D;" vertex="1" parent="41">
+                    <mxGeometry width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="Search Bar" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#4D4D4D;" vertex="1" parent="41">
+                    <mxGeometry y="40" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="Add Item Button" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#4D4D4D;" vertex="1" parent="41">
+                    <mxGeometry x="115" y="40" width="90" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#4D4D4D;" vertex="1" parent="11">
+                    <mxGeometry x="910" y="720" width="670" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="Back Button" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#4D4D4D;" vertex="1" parent="11">
+                    <mxGeometry x="910" y="1020" width="90" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="Item Deta&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfontFamily%3DTimes%20New%20Roman%3BfontColor%3D%23FFFFFF%3BfillColor%3D%234D4D4D%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-305%22%20y%3D%22120%22%20width%3D%22670%22%20height%3D%22290%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;ils Title" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;" vertex="1" parent="11">
+                    <mxGeometry x="110" y="740" width="145" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=left;container=1;" vertex="1" parent="11">
+                    <mxGeometry x="110" y="790" width="470" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="Delete Item" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;" vertex="1" parent="11">
+                    <mxGeometry x="600" y="880" width="145" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="Edit&amp;nbsp; Item" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;" vertex="1" parent="11">
+                    <mxGeometry x="600" y="830" width="145" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="Add New Item Title&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;" vertex="1" parent="11">
+                    <mxGeometry x="920" y="730" width="145" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;" vertex="1" parent="11">
+                    <mxGeometry x="920" y="790" width="470" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="Save Item" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;" vertex="1" parent="11">
+                    <mxGeometry x="1410" y="860" width="145" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" value="" style="group" vertex="1" connectable="0" parent="11">
+                    <mxGeometry x="120" y="800" width="440" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;Price : $50&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=left;" vertex="1" parent="115">
+                    <mxGeometry x="350" y="55" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;Quantity : 50&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=left;" vertex="1" parent="115">
+                    <mxGeometry x="350" y="30" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;Description : Something something spicy&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=left;" vertex="1" parent="115">
+                    <mxGeometry x="200" y="80" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;Image&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=center;" vertex="1" parent="115">
+                    <mxGeometry width="170" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;Category : Food&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=left;" vertex="1" parent="115">
+                    <mxGeometry x="200" y="55" width="130" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;Name : Siracha&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=left;" vertex="1" parent="115">
+                    <mxGeometry x="200" y="30" width="130" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;ID : 001&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=left;" vertex="1" parent="115">
+                    <mxGeometry x="200" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="116" value="" style="group" vertex="1" connectable="0" parent="11">
+                    <mxGeometry x="935" y="810" width="440" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="117" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;Price : input&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=left;" vertex="1" parent="116">
+                    <mxGeometry x="350" y="55" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;Quantity : input&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=left;" vertex="1" parent="116">
+                    <mxGeometry x="350" y="30" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="119" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;Description :&amp;nbsp; input&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=left;" vertex="1" parent="116">
+                    <mxGeometry x="200" y="80" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="120" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;input image&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=center;" vertex="1" parent="116">
+                    <mxGeometry width="170" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="121" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;Category : input&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=left;" vertex="1" parent="116">
+                    <mxGeometry x="200" y="55" width="130" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="122" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;Name : input&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=left;" vertex="1" parent="116">
+                    <mxGeometry x="200" y="30" width="130" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="123" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;ID : 001&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=left;" vertex="1" parent="116">
+                    <mxGeometry x="200" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="126" value="" style="shape=flexArrow;endArrow=classic;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#FFFFFF;width=8.888888888888888;endSize=5.181818181818182;endWidth=18.58585858585859;exitX=0.258;exitY=1.069;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="11" source="124">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="105" y="560" as="sourcePoint"/>
+                        <mxPoint x="140" y="600" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="130" y="570"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <UserObject label="&amp;nbsp;Items Detail View&amp;nbsp;" treeRoot="1" id="124">
+                    <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Times New Roman;" vertex="1" parent="11">
+                        <mxGeometry x="70" y="480" width="210" height="50" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="127" value="" style="shape=flexArrow;endArrow=classic;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#FFFFFF;width=10;endSize=6.111111111111111;endWidth=22.22222222222222;" edge="1" parent="11">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1490" y="500" as="sourcePoint"/>
+                        <mxPoint x="1460" y="590" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1470" y="520"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <UserObject label="Add Item View" treeRoot="1" id="129">
+                    <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Times New Roman;" vertex="1" parent="11">
+                        <mxGeometry x="1420" y="440" width="210" height="50" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="131" value="" style="shape=flexArrow;endArrow=classic;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#FFFFFF;width=13.68421052631579;endSize=3.473684210526316;" edge="1" parent="11">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="810" y="849.76" as="sourcePoint"/>
+                        <mxPoint x="870" y="849.76" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="820" y="849.76"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <UserObject label="Edit items can shift to the add new items page with filled out details" treeRoot="1" id="132">
+                    <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Times New Roman;" vertex="1" parent="11">
+                        <mxGeometry x="777.5" y="740" width="132.5" height="90" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="31" value="" style="group;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" connectable="0" parent="11">
+                    <mxGeometry x="510" y="190" width="240" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="001 | Siracha Hot Sauce | 45 | View/Edit - Delete" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=left;container=1;" vertex="1" parent="31">
+                    <mxGeometry y="96" width="240.00000000000003" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="133" value="" style="group;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" connectable="0" parent="31">
+                    <mxGeometry width="240.00000000000003" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Item ID | Name | Quantity | Action Buttons" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=left;container=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="133">
+                    <mxGeometry width="240.00000000000003" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="001 | Siracha Hot Sauce | 45 | View/Edit - Delete" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=left;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="133">
+                    <mxGeometry y="48" width="240.00000000000003" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="001 | Siracha Hot Sauce | 45 | View/Edit - Delete" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=left;" vertex="1" parent="133">
+                    <mxGeometry y="192" width="240.00000000000003" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="001 | Siracha Hot Sauce | 45 | View/Edit - Delete" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#808080;align=left;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="133">
+                    <mxGeometry y="144" width="240.00000000000003" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="IMAGE / NAME / DESCRIPTION" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#4D4D4D;" vertex="1" parent="11">
+                    <mxGeometry x="800" y="160" width="340" height="310" as="geometry"/>
+                </mxCell>
+                <UserObject label="Search Bar should pull up item views&amp;nbsp;" treeRoot="1" id="130">
+                    <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Times New Roman;" vertex="1" parent="1">
+                        <mxGeometry x="-520" y="50" width="210" height="50" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="135" value="Inventory Application" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontColor=#FFFFFF;fillColor=#4D4D4D;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="-570" width="200" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
