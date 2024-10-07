@@ -3,10 +3,14 @@ import { ItemsList } from './ItemsList';
 
 // import and prepend the api url to any fetch calls
 import apiURL from '../api';
+import AddItems from './AddItem';
+import UpdateItem from './UpdateItem';
+import SingleItem from './SingleItem';
 
 export const App = () => {
 
 	const [items, setItems] = useState([]);
+	const [item, setItem] = useState({});
 	const [view, setView] = useState(1);
 
 	async function fetchItems(){
@@ -26,9 +30,13 @@ export const App = () => {
 
 	return (
 		<main>	
-      <h1>Items Store</h1>
-			<h2>All things 🔥</h2>
-			<ItemsList items={items} />
+			{view == 1? 
+			<div className='items'>
+				<ItemsList items={items} />
+				<SingleItem item={item}/>
+			</div> : view == 2?
+			 <AddItems/>:
+			 <UpdateItem/>}
 		</main>
 	)
 }
