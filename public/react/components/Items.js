@@ -1,10 +1,8 @@
 import React from 'react';
 
-export const Item = (props) => {
-
-  return <>
-    <h3>{props.item.name}</h3>
-    <img src={props.item.image} alt={props.item.name} />
-  </>
+export const Item = ({item, fetchSingleItem}) => {
+  return <div onClick={()=> fetchSingleItem(item.id)} className='product'>
+    <h5>{item.name}</h5>
+  </div>
 } 
 	
