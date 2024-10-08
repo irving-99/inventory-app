@@ -1,11 +1,19 @@
 const express = require('express');
 const router = express.Router();
-const {Item} = require('../models')
+const {Item} = require('../models');
+const { Sequelize, Op} = require('sequelize');
 
 // GET all items
 router.get('/', async (req, res, next) => {
     try{
-        const items = await Item.findAll()
+        const search = req.query.search
+        let items;
+        if(search){
+            console.log(search);
+            items = await Item.findAll({where: {name : { [Op.like] :`%${search}%`}}})
+        }else{
+            items = await Item.findAll()
+        }
         res.json(items)
     } catch(error){
         next(error)
@@ -35,5 +43,7 @@ router.delete('/:id', async (req,res, next)=>{
     }
     
 })
+
+
 
 module.exports = router;

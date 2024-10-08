@@ -15,6 +15,7 @@ export const App = () => {
 	const [item, setItem] = useState({});
 	const [view, setView] = useState('viewItem');
 	const [itemChanged, setItemChanged] = useState([])
+	const [searchItem, setSearchItem] = useState('')
 
 	async function fetchItems(){
 		try {
@@ -70,11 +71,22 @@ export const App = () => {
 		}
 	}
 
+	const handleSearch = async()=>{
+		try {
+			const res = await fetch(`${apiURL}/items?search=${searchItem}`)
+			const data = await res.json()
+			setItems(data)
+			console.log(data);
+		} catch (error) {
+			console.error("OOoops Something Went Wrong While Trying To Search", error);
+		}
+	}
+
 	return (
 		<main>	
 			{view == 'viewItem'? 
 			<div className='items'>
-				<ItemsList setView={setView} items={items} item={item} setItem={setItem} fetchSingleItem={fetchSingleItem} deleteItem={deleteItem}/>
+				<ItemsList setView={setView} items={items} item={item} setItem={setItem} fetchSingleItem={fetchSingleItem} deleteItem={deleteItem} searchItem={searchItem} setSearchItem={setSearchItem} handleSearch={handleSearch}/>
 			</div> : view == 'addItem'?
 			 <AddItem/>:
 			 <UpdateItem setView={setView}/>}
