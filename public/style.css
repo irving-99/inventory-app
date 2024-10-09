@@ -6,15 +6,30 @@
 
 .items{
   display: flex;
+  height: 20px;
+  justify-content: space-around;
+  gap: 3rem;
 }
 .item{
   width: 30rem;
   border: 3px black solid;
   border-radius: 5px;
+  height: 450px;
+  overflow: scroll;
+}
+
+.product:hover{
+  background-color: bisque;
 }
 
 .product{
   border: 1px gray solid;
+  display: flex;
+}
+
+.product > img{
+  width: 2rem;
+  border-radius: 30%;
 }
 
 img{
@@ -28,13 +43,13 @@ img{
   width: 60%;
 }
 
-.SingleItem_buttons{
+.singleItem_buttons{
   width: 100%;
   display: flex;
   justify-content:right;
 }
 
-.SingleItem_buttons > button{
+.singleItem_buttons > button{
   padding: 1rem;
   border-radius: 5px;
 }
@@ -49,7 +64,25 @@ input[type=text]{
   box-sizing: border-box;
 }
 
+.search{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
 
+.search> input{
+  height: 2rem;
+  width: 15rem;
+}
 
-
+.singleItemInfo{
+  border: 3px black solid;
+  background-color: white;
+  border-radius: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  text-align: center;
+}
 
