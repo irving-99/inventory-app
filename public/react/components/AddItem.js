@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import apiURL from '../api'
 
 
-const AddItems = ()=>{
+const AddItems = ({setView})=>{
     const [name, setName] = useState('')
     const [description, setDescription] = useState('')
     const [price, setPrice] = useState(0)
@@ -72,7 +72,7 @@ const AddItems = ()=>{
                 onChange={imageHandler}
                 placeholder='Image Link'
                 />
-                <button>Add Item</button>
+                <button onClick={()=>{setView('viewItem')}}>Add Item</button>
             </form>
         </>
     )

@@ -100,7 +100,7 @@ export const App = () => {
 			<div className='items'>
 				<ItemsList setView={setView} items={items} item={item} setItem={setItem} editItem={editItem} fetchSingleItem={fetchSingleItem} deleteItem={deleteItem} searchItem={searchItem} setSearchItem={setSearchItem} handleSearch={handleSearch}/>
 			</div> : view == 'addItem'?
-			 <AddItem/> : view == 'updateItem' &&
+			 <AddItem setView={setView}/> : view == 'updateItem' &&
 			 <UpdateItem 
 			 	item={item} 
 				editItem={editItem}		
