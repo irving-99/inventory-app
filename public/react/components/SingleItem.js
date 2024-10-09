@@ -1,10 +1,18 @@
-const SingleItem = ({item, setView})=>{
-    console.log(item);
-    
-    return <>SingleItem
-    <button onClick={()=> setView('addItem')}>additem</button>
-    <button onClick={()=> setView('updateItem')}>update item</button>
-    </>
+const SingleItem = ({item, setView, editItem, deleteItem})=>{   
+
+
+    return <div className="singleItem">
+
+   <div className="singleItem_buttons">
+    <button onClick={()=> editItem(item)}>Edit Item</button>
+    <button onClick={()=> deleteItem(item.id)}>Delete Item</button>
+   </div>
+   <div className="singleItemInfo">
+        <h3>{item.name}</h3>
+        <img src={item.image}/>
+        <p>{item.description}</p>
+   </div>
+    </div>
 }
 
 export default SingleItem;

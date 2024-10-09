@@ -1,5 +1,88 @@
 * {
-  margin: 0;
+  margin: 1%;
   box-sizing: border-box;
   background-color: rgb(223, 223, 223);
 }
+
+.items{
+  display: flex;
+  height: 20px;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.item{
+  width: 30rem;
+  border: 3px black solid;
+  border-radius: 5px;
+  height: 450px;
+  overflow: scroll;
+}
+
+.product:hover{
+  background-color: bisque;
+}
+
+.product{
+  border: 1px gray solid;
+  display: flex;
+}
+
+.product > img{
+  width: 2rem;
+  border-radius: 30%;
+}
+
+img{
+  width: 50%;
+}
+
+.singleItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+
+.singleItem_buttons{
+  width: 100%;
+  display: flex;
+  justify-content:right;
+}
+
+.singleItem_buttons > button{
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.search{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.search> input{
+  height: 2rem;
+  width: 15rem;
+}
+
+.singleItemInfo{
+  border: 3px black solid;
+  background-color: white;
+  border-radius: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  text-align: center;
+}
+
