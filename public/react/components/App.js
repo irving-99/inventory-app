@@ -35,8 +35,8 @@ export const App = () => {
 				<ItemsList items={items} />
 				<SingleItem item={item} setView={setView}/>
 			</div> : view == 'addItem'?
-			 <AddItem/>:
-			 <UpdateItem setView={setView}/>}
+				<AddItem/>:
+				<UpdateItem setView={setView}/>}
 		</main>
 	)
 }

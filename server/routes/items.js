@@ -22,3 +22,15 @@ router.get('/:id', async (req, res, next) => {
         next(error)
     }
 })
+
+// POST one item
+router.put('/', async (req, res, next) => {
+    try{
+        const item = await Item.create(req.body)
+        res.json(item)
+    } catch(error){
+        next(error)
+    }
+})
+
+module.exports = router;
