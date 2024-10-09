@@ -7,6 +7,8 @@
 .items{
   display: flex;
   height: 20px;
+  justify-content: space-around;
+  gap: 3rem;
 }
 .item{
   width: 30rem;
@@ -58,10 +60,18 @@ img{
   justify-content: center;
 }
 
+.search> input{
+  height: 2rem;
+  width: 15rem;
+}
+
 .singleItemInfo{
   border: 3px black solid;
+  background-color: white;
   border-radius: 1%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 300px;
+  text-align: center;
 }
