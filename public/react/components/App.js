@@ -8,7 +8,6 @@ import AddItem from './AddItem';
 import UpdateItem from './UpdateItem';
 
 
-
 export const App = () => {
 	
 	const [items, setItems] = useState([]);
@@ -57,7 +56,6 @@ export const App = () => {
 			}
 		} catch (error) {
 			console.error("Sorry something went wrong when trying to delete the item", error);
-			
 		}
 	}
 
@@ -69,6 +67,20 @@ export const App = () => {
 			console.error('error adding item');
 			
 		}
+	}
+	const editItem = async(item)=>{
+		setView('updateItem')
+		const res = await fetch(`${apiURL}/items/${item.id}`,{
+              method: "PUT",
+              headers: {
+                  "Content-Type": "application/json",
+              }, body: JSON.stringify(item)
+             })
+             const data = await res.json()
+			setItemChanged(item)
+			if (setItemChanged(item)){
+				setView('viewItem')
+			}
 	}
 
 	const handleSearch = async()=>{
@@ -86,10 +98,13 @@ export const App = () => {
 		<main>	
 			{view == 'viewItem'? 
 			<div className='items'>
-				<ItemsList setView={setView} items={items} item={item} setItem={setItem} fetchSingleItem={fetchSingleItem} deleteItem={deleteItem} searchItem={searchItem} setSearchItem={setSearchItem} handleSearch={handleSearch}/>
+				<ItemsList setView={setView} items={items} item={item} setItem={setItem} editItem={editItem} fetchSingleItem={fetchSingleItem} deleteItem={deleteItem} searchItem={searchItem} setSearchItem={setSearchItem} handleSearch={handleSearch}/>
 			</div> : view == 'addItem'?
-			 <AddItem/>:
-			 <UpdateItem setView={setView}/>}
+			 <AddItem/> : view == 'updateItem' &&
+			 <UpdateItem 
+			 	item={item} 
+				editItem={editItem}		
+				setView={setView}/>}
 		</main>
 	)
 }
