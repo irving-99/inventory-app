@@ -2,7 +2,9 @@ import React from 'react';
 import { Item } from './Items';
 import SingleItem from '../components/SingleItem';
 
-export const ItemsList = ({setView,items, item, setItem, fetchSingleItem, deleteItem, editItem, searchItem, setSearchItem, handleSearch}) => {
+export const ItemsList = ({setView,items, item, setItem, fetchSingleItem, deleteItem, searchItem, setSearchItem, handleSearch}) => {
+
+
 
 	return <div className='items'>
 	<div>
@@ -19,6 +21,6 @@ export const ItemsList = ({setView,items, item, setItem, fetchSingleItem, delete
 			}
 		</div>
 	</div>
-	<SingleItem item={item} editItem={editItem} deleteItem={deleteItem}/>
+	<SingleItem item={item} deleteItem={deleteItem}/>
 	</div>
 } 

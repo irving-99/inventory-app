@@ -1,10 +1,7 @@
-const SingleItem = ({item, setView, editItem, deleteItem})=>{   
-
-
+const SingleItem = ({item, setView, deleteItem})=>{    
     return <div className="singleItem">
-
    <div className="singleItem_buttons">
-    <button onClick={()=> editItem(item)}>Edit Item</button>
+    <button>Edit Item</button>
     <button onClick={()=> deleteItem(item.id)}>Delete Item</button>
    </div>
    <div className="singleItemInfo">
