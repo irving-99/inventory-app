@@ -2,7 +2,8 @@ import React from 'react';
 import { Item } from './Items';
 import SingleItem from '../components/SingleItem';
 
-export const ItemsList = ({setView,items, item, setItem, fetchSingleItem, deleteItem}) => {
+export const ItemsList = ({setView,items, item, setItem, fetchSingleItem, editItem, deleteItem}) => {
+
 	return <div className='items'>
 	<div>
 		<button onClick={()=> setView('addItem')}>Add Item</button>
@@ -14,6 +15,6 @@ export const ItemsList = ({setView,items, item, setItem, fetchSingleItem, delete
 			}
 		</div>
 	</div>
-	<SingleItem item={item} deleteItem={deleteItem}/>
+	<SingleItem item={item} editItem={editItem} deleteItem={deleteItem}/>
 	</div>
 } 
