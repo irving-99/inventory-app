@@ -6,9 +6,9 @@
 This application built by Irving 99 aka The Best, displays a list of items in a box and allows users to view information about a selected item next to the box. Users can easily add and update items through interactive forms as well as delete a selected item with click of a button.
 
 ## Tech Stack
-FrontEnd: React
-Backend: Node.js, Express.js, Sequelize
-Deployemnt: Render
+- FrontEnd: React
+- Backend: Node.js, Express.js, Sequelize
+- Deployment: Render
 
 ## Installation
 1. Clone the repository 
