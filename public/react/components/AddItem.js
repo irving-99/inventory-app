@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import apiURL from '../api'
 
 
-const AddItems = ({setView})=>{
+const AddItems = ({setView, setItemChanged})=>{
     const [name, setName] = useState('')
     const [description, setDescription] = useState('')
     const [price, setPrice] = useState(0)
@@ -35,6 +35,8 @@ const AddItems = ({setView})=>{
                 body: JSON.stringify(formData)
             })
             const result = await response.json()
+            setItemChanged(result)
+            setView('viewItem')
         } catch(error){
             console.error('Error creating item')
         }
@@ -73,7 +75,7 @@ const AddItems = ({setView})=>{
                 onChange={imageHandler}
                 placeholder='Image Link'
                 />
-                <button onClick={()=>{setView('viewItem')}}>Add Item</button>
+                <button>Add Item</button>
             </form>
         </>
     )

@@ -71,7 +71,7 @@ export const App = () => {
 			setView('viewItem')
 			setItemChanged(item)
 	}
-
+	// this is used to handle search base on search keywords
 	const handleSearch = async()=>{
 		try {
 			const res = await fetch(`${apiURL}/items?search=${searchItem}`)
@@ -86,11 +86,12 @@ export const App = () => {
 	return (
 		<main>	
 			<h2>Irving 99 Inventory Management App</h2>
+			{/* routing and rendering of the different components based on the view */}
 			{view == 'viewItem'? 
 			<div className='items'>
 				<ItemsList setView={setView} items={items} item={item} setItem={setItem} editItem={editItem} fetchSingleItem={fetchSingleItem} deleteItem={deleteItem} searchItem={searchItem} setSearchItem={setSearchItem} handleSearch={handleSearch}/>
 			</div> : view == 'addItem'?
-			 <AddItem setView={setView}/> :
+			 <AddItem setView={setView} setItemChanged={setItemChanged}/> :
 			 <UpdateItem 
 			 	item={item} 
 				editItem={editItem}		
