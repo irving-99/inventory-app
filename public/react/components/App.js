@@ -59,15 +59,6 @@ export const App = () => {
 		}
 	}
 
-	const addItem = async (body)=>{
-		try {
-			console.log('Add item hit');
-			
-		} catch (error) {
-			console.error('error adding item');
-			
-		}
-	}
 	const editItem = async(item)=>{
 		setView('updateItem')
 		const res = await fetch(`${apiURL}/items/${item.id}`,{
@@ -77,10 +68,8 @@ export const App = () => {
               }, body: JSON.stringify(item)
              })
              const data = await res.json()
+			setView('viewItem')
 			setItemChanged(item)
-			if (setItemChanged(item)){
-				setView('viewItem')
-			}
 	}
 
 	const handleSearch = async()=>{
@@ -96,11 +85,12 @@ export const App = () => {
 
 	return (
 		<main>	
+			<h2>Irving 99 Inventory Management App</h2>
 			{view == 'viewItem'? 
 			<div className='items'>
 				<ItemsList setView={setView} items={items} item={item} setItem={setItem} editItem={editItem} fetchSingleItem={fetchSingleItem} deleteItem={deleteItem} searchItem={searchItem} setSearchItem={setSearchItem} handleSearch={handleSearch}/>
 			</div> : view == 'addItem'?
-			 <AddItem setView={setView}/> : view == 'updateItem' &&
+			 <AddItem setView={setView}/> :
 			 <UpdateItem 
 			 	item={item} 
 				editItem={editItem}		

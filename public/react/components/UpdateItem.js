@@ -62,8 +62,9 @@ const UpdateItem = ({item, setView, editItem})=>{
         <input type="text" name="image" value={formData.image} onChange={handleChange}/>
        </div>
         <button type="submit">Update</button> 
+        <button type="button" onClick={()=>{setView('viewItem')}}>Back</button>
     </form>
-        <button type="button" onClick={()=>{setView('viewItem')}}>Done</button>
+        
   
     </>
 }

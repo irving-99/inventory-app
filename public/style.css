@@ -49,10 +49,6 @@ img{
   justify-content:right;
 }
 
-.singleItem_buttons > button{
-  padding: 1rem;
-  border-radius: 5px;
-}
 
 input[type=text]{
   width: 100%;
@@ -76,6 +72,7 @@ input[type=text]{
 }
 
 .singleItemInfo{
+  margin-top: 2rem;
   border: 3px black solid;
   background-color: white;
   border-radius: 1%;
@@ -86,3 +83,8 @@ input[type=text]{
   text-align: center;
 }
 
+button{
+  padding: 0.4rem;
+  font-weight: 600;
+  border-radius: 5px;
+}
