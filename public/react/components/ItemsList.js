@@ -19,6 +19,6 @@ export const ItemsList = ({setView,items, item, setItem, fetchSingleItem, delete
 			}
 		</div>
 	</div>
-	<SingleItem item={item} editItem={editItem} deleteItem={deleteItem}/>
+	<SingleItem item={item} setView={setView} editItem={editItem} deleteItem={deleteItem}/>
 	</div>
 } 

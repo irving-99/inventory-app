@@ -40,7 +40,8 @@ const AddItems = ({setView})=>{
         }
     }
     return(
-        <>
+        <>  
+            <h3>Add New Item</h3>
             <form onSubmit={submitHandler}>
                 <input
                 type='text'
