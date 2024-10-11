@@ -17,8 +17,9 @@ const UpdateItem = ({item, setView, editItem})=>{
 
    
     useEffect(() => {
-        if (item) {  setFormData({
-                 id: item.id,
+        if (item) {setFormData(
+            {
+                id: item.id,
                 name: item.name,
                 price: item.price,
                 category: item.category,
@@ -64,8 +65,6 @@ const UpdateItem = ({item, setView, editItem})=>{
         <button type="submit">Update</button> 
         <button type="button" onClick={()=>{setView('viewItem')}}>Back</button>
     </form>
-        
-  
     </>
 }
 

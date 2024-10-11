@@ -10,7 +10,6 @@ export const ItemsList = ({setView,items, item, setItem, fetchSingleItem, delete
 			<input placeholder='Search Items' value={searchItem} onChange={(e)=>setSearchItem(e.target.value)}/>
 			<button onClick={handleSearch}>Search</button>
 		</div>
-		<button onClick={()=> setView('addItem')}>Add Item</button>
 		<div className='item'>
 			{
 				items.map((item, idx) => {
