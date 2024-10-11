@@ -46,27 +46,27 @@ const UpdateItem = ({item, setView, editItem})=>{
         })
     }
 
-    return <>
-    <h2>Update Item</h2>
-    <form onSubmit={handleSubmit}>
-        <div> 
-        <label>Name : </label>
-        <input type="text" name="name" value={formData.name} onChange={handleChange}/>
-        <label>Price : </label>
-        <input type="text" name="price" value={formData.price} onChange={handleChange}/>
-        <label>Category : </label>
-        <input type="text" name="category" value={formData.category} onChange={handleChange}/>
-        <label>Description : </label>
-        <input type="text" name="description" value={formData.description} onChange={handleChange}/>
-        <label>Image : </label>
-        <input type="text" name="image" value={formData.image} onChange={handleChange}/>
-       </div>
-        <button type="submit">Update</button> 
-        <button type="button" onClick={()=>{setView('viewItem')}}>Back</button>
-    </form>
-        
-  
-    </>
+    return(
+        <div className='form-container'>
+            <h2>Update Item</h2>
+            <form onSubmit={handleSubmit}>
+                <label>Name : </label>
+                <input type="text" name="name" value={formData.name} onChange={handleChange}/>
+                <label>Price : </label>
+                <input type="text" name="price" value={formData.price} onChange={handleChange}/>
+                <label>Category : </label>
+                <input type="text" name="category" value={formData.category} onChange={handleChange}/>
+                <label>Description : </label>
+                <input type="text" name="description" value={formData.description} onChange={handleChange}/>
+                <label>Image : </label>
+                <input type="text" name="image" value={formData.image} onChange={handleChange}/>
+                <div className='submit-buttons'>
+                    <button className="buttons" type="submit">Update</button> 
+                    <button className="buttons" type="button" onClick={()=>{setView('viewItem')}}>Back</button>
+                </div>
+            </form>
+        </div>
+    ) 
 }
 
 export default UpdateItem;

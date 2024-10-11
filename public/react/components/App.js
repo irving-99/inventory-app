@@ -18,6 +18,7 @@ export const App = () => {
 
 	async function fetchItems(){
 		try {
+			console.log(apiURL)
 			const response = await fetch(`${apiURL}/items`);
 			const itemsData = await response.json();
 			setItems(itemsData);
@@ -85,7 +86,7 @@ export const App = () => {
 
 	return (
 		<main>	
-			<h2>Irving 99 Inventory Management App</h2>
+			<h1 className='font'>Irving 99 Inventory Management App</h1>
 			{/* routing and rendering of the different components based on the view */}
 			{view == 'viewItem'? 
 			<div className='items'>

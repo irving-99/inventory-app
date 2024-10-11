@@ -42,8 +42,8 @@ const AddItems = ({setView, setItemChanged})=>{
         }
     }
     return(
-        <>  
-            <h3>Add New Item</h3>
+        <div className='form-container'>  
+            <h2>Add New Item</h2>
             <form onSubmit={submitHandler}>
                 <input
                 type='text'
@@ -75,9 +75,12 @@ const AddItems = ({setView, setItemChanged})=>{
                 onChange={imageHandler}
                 placeholder='Image Link'
                 />
-                <button>Add Item</button>
+                <div className='submit-buttons'>
+                    <button className='buttons'>Add Item</button>
+                    <button className="buttons" type="button" onClick={()=>{setView('viewItem')}}>Back</button>
+                </div>
             </form>
-        </>
+        </div>
     )
 }
 
