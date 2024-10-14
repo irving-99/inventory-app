@@ -5,21 +5,21 @@ export default function Cart({setView, toggle, showCart}) {
     const { cartItems, addToCart, removeFromCart, clearCart, getCartTotal } = useContext(CartContext)
     return (
       <>
-      <div className="overall">
-  <h1 className="cart1">Cart</h1>
-  <div className="map">
+      <div>
+  <h1 className="buttons">Cart</h1>
+  <div className="container">
     {cartItems.map((item) => (
-      <div className="map1" key={item.id}>
-        <div className="map2">
-          <img src={item.image} alt={item.name} className="imgCart" />
+      <div key={item.id}>
+        <div>
+          <img src={item.image} alt={item.name} />
           <div className="cartText">
             <h1 className="cartName">{item.name}</h1>
             <p className="cartPrice">${item.price}</p>
           </div>
         </div>
-        <div className=".pmButtons">
+        <div>
           <button
-            className="plusButton"
+            className="buttons"
             onClick={() => {
               addToCart(item)
             }}
@@ -28,7 +28,7 @@ export default function Cart({setView, toggle, showCart}) {
           </button>
           <p>{item.quantity}</p>
           <button
-            className="minusButton"
+            className="buttons"
             onClick={() => {
               removeFromCart(item)
             }}
@@ -41,9 +41,9 @@ export default function Cart({setView, toggle, showCart}) {
   </div>
   {
     cartItems.length > 0 ? (
-      <div className="cartTotals">
-    <h1 className="cartTotals1">Total: ${getCartTotal()}</h1>
-    <button
+      <div>
+    <h1>Total: ${getCartTotal()}</h1>
+    <button className='buttons'
       onClick={() => {
         clearCart()
       }}
@@ -52,7 +52,7 @@ export default function Cart({setView, toggle, showCart}) {
     </button>
   </div>
     ) : (
-      <h1 className="cartEmpty">Your cart is empty</h1>
+      <h1>Your cart is empty</h1>
     )
   }
 </div>
