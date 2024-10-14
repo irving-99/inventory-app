@@ -96,7 +96,7 @@ export const App = () => {
 	return (
 		<main>	
 			<h1 className='font'>Irving 99 Inventory Management App</h1>
-			<button className='cart' onClick={toggle}>{showCart ? 'Back to Main Menu' : 'Show Cart'} ({cartItems.length})</button>
+			<button className='buttons' onClick={toggle}>{showCart ? 'Back to Main Menu' : 'Show Cart'} ({cartItems.length})</button>
 			{/* routing and rendering of the different components based on the view */}
 			{view == 'viewItem'? 
 			<div className='items'>

@@ -22,7 +22,7 @@ const SingleItem = ({item, setView, editItem, deleteItem})=>{
             <div className="singleItem_buttons">
                 <button className="buttons" onClick={()=> setView('editItem')}>Update Item</button>
                 <button className="buttons" onClick={()=> deleteItem(item.id)}>Delete Item</button>
-                <button onClick={()=> addToCart(item)}>Add to Cart </button>
+                <button className='buttons' onClick={()=> addToCart(item)}>Add to Cart </button>
 
             </div>
         </div>
