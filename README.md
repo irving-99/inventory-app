@@ -1,21 +1,46 @@
-![logo](https://user-images.githubusercontent.com/44912347/202296600-c5f247d6-9616-49db-88f0-38433429d781.jpg)
+![logo](Irving99.png)
 
-# Inventory App
-You are a team of developers for an e-commerce company. The Engineering team  is rebuilding their inventory tracking app from the ground up. Your team has been tasked with creating a Full-Sack (front and back end) RESTful CRUD application to track the items.
+# Inventory Managment App
 
-## Getting Started
+## Project Overview
+This application built by Irving 99 aka The Best, displays a list of items in a box and allows users to view information about a selected item next to the box. Users can easily add and update items through interactive forms as well as delete a selected item with click of a button.
 
-1. `npm install`
-2. `npm run seed`
-3. `npm run server-dev`
-4. In a seperate terminal, `npm run client-dev`
+## Tech Stack
+- FrontEnd: React
+- Backend: Node.js, Express.js, Sequelize
+- Deployment: Render
 
-## Inventory App “Tiers”
+## Installation
+1. Clone the repository 
+  `git clone https://github.com/irving-99/inventory-app.git
+   cd inventory-app`
+2. Install Dependencies
+  `npm install`
+  `npm run seed`
+3. Start Development Servers
+  `npm run server-dev`
+   In a seperate terminal, 
+  `npm run client-dev`
+4. View Application on
+   http://localhost:[port]
 
-The tiers describe different levels of functionality in your application with the difficulty becoming more complex as you advance through the tiers. Start with Tier I, and complete everything you can, moving as quickly as possible as you can to Tier II. They are described as user stories.
+## Usage 
+ -  Adding Items: Click the "Add Item" button, fill in the form, and click "Add" to save the item
+ -  Updating Items: Select an item, click "Update Item", make changes in the pre-filled form, and click "Update". If you change your mind you can  click on the "Back" button to go back to the main view
+ -  Delete Items: Select an item and click "Delete Item". The item will be removed from both the database and frontend view
+ -  Search Items: Input the name of a particular item within the search box and the list will update with any items matching the text
 
-Your team should strive to finish at least the first 4 tiers (a CRUD application) and attempt some of the bonus material.
+## Contributers
+  - Evan Rosas
+  - Clement Ndimuangu
+  - Kofi Boateng
 
+## Deployment 
+  The project will be displayed in Render. Once deployed, the live site link will be available [here]
+
+
+
+<!-- 
 ### Tier I: MVP Application
 - As a User, I want to view all items in inventory
   - Sequelize Model for Item
@@ -50,4 +75,4 @@ Your team should strive to finish at least the first 4 tiers (a CRUD application
 - As a User, I want to be able to search through data based on search criteria
 - As a User, I want to add items to a cart and purchase
 - As a User, I want to use the application on a mobile browser
-- As an Admin, I want all Add and Edit item requests to have server-side validations
+- As an Admin, I want all Add and Edit item requests to have server-side validations -->

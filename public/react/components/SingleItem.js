@@ -1,4 +1,11 @@
+import React from 'react'
+import { useContext, useEffect, useState } from 'react'
+import { CartContext } from '../context/cart'
+import Cart from './Cart'
+
+
 const SingleItem = ({item, setView, editItem, deleteItem})=>{  
+    const { cartItems, addToCart } = useContext(CartContext)
     return(
         <div className="singleItem">
             <div className="singleItemInfo">
@@ -15,6 +22,8 @@ const SingleItem = ({item, setView, editItem, deleteItem})=>{
             <div className="singleItem_buttons">
                 <button className="buttons" onClick={()=> setView('editItem')}>Update Item</button>
                 <button className="buttons" onClick={()=> deleteItem(item.id)}>Delete Item</button>
+                <button className='buttons' onClick={()=> addToCart(item)}>Add to Cart </button>
+
             </div>
         </div>
     ) 

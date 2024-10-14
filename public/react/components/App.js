@@ -6,15 +6,24 @@ import "../../style.css"
 import apiURL from '../api';
 import AddItem from './AddItem';
 import UpdateItem from './UpdateItem';
+import { useContext, useEffect, useState } from 'react'
+import { CartContext } from '../context/cart'
+import Cart from './Cart'
 
 
 export const App = () => {
-	
 	const [items, setItems] = useState([]);
 	const [item, setItem] = useState({});
 	const [view, setView] = useState('viewItem');
 	const [itemChanged, setItemChanged] = useState([])
 	const [searchItem, setSearchItem] = useState('')
+    const [showCart, setShowCart] = useState(false)
+	const {cartItems} = useContext(CartContext)
+    const toggle = () => {
+		setView(showCart ? 'viewItem' : "viewCart")
+		setShowCart((prevState)=>!prevState)
+    }
+
 
 	async function fetchItems(){
 		try {
@@ -87,16 +96,15 @@ export const App = () => {
 	return (
 		<main>	
 			<h1 className='font'>Irving 99 Inventory Management App</h1>
+			<button className='buttons' onClick={toggle}>{showCart ? 'Back to Main Menu' : 'Show Cart'} ({cartItems.length})</button>
 			{/* routing and rendering of the different components based on the view */}
 			{view == 'viewItem'? 
 			<div className='items'>
 				<ItemsList setView={setView} items={items} item={item} setItem={setItem} editItem={editItem} fetchSingleItem={fetchSingleItem} deleteItem={deleteItem} searchItem={searchItem} setSearchItem={setSearchItem} handleSearch={handleSearch}/>
 			</div> : view == 'addItem'?
-			 <AddItem setView={setView} setItemChanged={setItemChanged}/> :
-			 <UpdateItem 
-			 	item={item} 
-				editItem={editItem}		
-				setView={setView}/>}
+			 <AddItem setView={setView} setItemChanged={setItemChanged}/> : view == 'updateItem' ?
+			 <UpdateItem item={item} editItem={editItem} setView={setView}/> :
+			 <Cart  setView={setView} showCart={showCart} toggle={toggle} />}
 		</main>
 	)
 }
