@@ -5,27 +5,28 @@ import Cart from './Cart'
 
 
 const SingleItem = ({item, setView, editItem, deleteItem})=>{  
-    
     const { cartItems, addToCart } = useContext(CartContext)
+    return(
+        <div className="singleItem">
+            <div className="singleItemInfo">
+                <div>
+                    <h3 className="font">{item.name}</h3>
+                </div>
+                <div className="photo-info">
+                    <img className="single-photo" src={item.image}/>
+                    <div className="description">
+                        <p>{item.description}</p>
+                    </div>
+                </div>
+            </div>
+            <div className="singleItem_buttons">
+                <button className="buttons" onClick={()=> setView('editItem')}>Update Item</button>
+                <button className="buttons" onClick={()=> deleteItem(item.id)}>Delete Item</button>
+                <button onClick={()=> addToCart(item)}>Add to Cart </button>
 
-    return <div className="singleItem">
-
-   <div className="singleItem_buttons">
-    <button onClick={()=> setView('addItem')}>Add Item</button>
-    <button onClick={()=> setView('updateItem')}>Update Item</button>
-    <button onClick={()=> deleteItem(item.id)}>Delete Item</button>
-   </div>
-   <div className="singleItemInfo">
-        <h3>{item.name}</h3>
-        <img src={item.image}/>
-        <p><i>{item.description}</i></p>
-       <div className='innerItem' > 
-        <p className='price-tag'><strong>${item.price}</strong></p>
-         {/* need to add to cart */}
-        <button onClick={()=> addToCart(item)}>Add to Cart </button>
+            </div>
         </div>
-   </div>
-    </div>
+    ) 
 }
 
 export default SingleItem;

@@ -27,6 +27,7 @@ export const App = () => {
 
 	async function fetchItems(){
 		try {
+			console.log(apiURL)
 			const response = await fetch(`${apiURL}/items`);
 			const itemsData = await response.json();
 			setItems(itemsData);
@@ -94,11 +95,8 @@ export const App = () => {
 
 	return (
 		<main>	
-			<div className='header'>
-			<h2 className='title'>Irving 99's <br></br> [Inventory Management App]</h2> 
-			<h3 className='title'></h3>
+			<h1 className='font'>Irving 99 Inventory Management App</h1>
 			<button className='cart' onClick={toggle}>{showCart ? 'Back to Main Menu' : 'Show Cart'} ({cartItems.length})</button>
-			</div>
 			{/* routing and rendering of the different components based on the view */}
 			{view == 'viewItem'? 
 			<div className='items'>
